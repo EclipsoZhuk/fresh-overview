@@ -15,10 +15,10 @@ export default function ProductCard({ product }: IProductCardProps) {
       <img src={product.image} alt={product.title} class="w-1/6" />
       <h2 class="font-bold text-lg">{product.title}</h2>
       <p class="font-bold">{product.price}$</p>
-      <a class="bg-blue-400 px-2 rounded-lg" href={`/product/${product.id}`}>
+      <a class="bg-green-400 px-2 rounded-lg" href={`/product/${product.id}`}>
         Open
       </a>
-      <button onClick={toggleDesc} class="bg-blue-400 mt-2 px-2 rounded-lg">
+      <button onClick={toggleDesc} class="bg-green-400 mt-2 px-2 rounded-lg">
         Toggle Description
       </button>
       {details && <p>{product.description}</p>}
